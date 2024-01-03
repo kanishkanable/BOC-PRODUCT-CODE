@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/aspectjrt-1.6.10.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/cas-client-core-3.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.ibm.mq.allclient-9.2.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.ibm.ws.ejb.thinclient_7.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.apps.ti.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.apps.ti.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.contentmanager.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.customisation_editor_1.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.dlserver.adaptor.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.dlserver.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.document.upload.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.documentdriver.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.documents.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.enigma.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.gen.ti-xsd.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.meridian.swiftdriver.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.messaging.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.persistence.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.print.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.service.access-ejb.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/com.misys.tiplus2.serviceaccess-client.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-codec-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-lang3-3.7.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/commons-text-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/foundations-lang-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/framework-async-processing-ejb.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/framework-monitor-local-subscriber-ejb.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/javax.jms-3.1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/javax.jms-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/jcl-over-slf4j-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/js-1.7R2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/platform-services-ejb.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/pw-swift-core-SRU2018-7.10.3.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/quartz-2.1.5.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-context-support-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-web-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/InterfaceDemo_Libs/spring-webmvc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

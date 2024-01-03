@@ -1,0 +1,15 @@
+  __  __ _____  _______     _______ 
+ |  \/  |_   _|/ ____\ \   / / ____|
+ | \  / | | | | (___  \ \_/ / (___  
+ | |\/| | | |  \___ \  \   / \___ \ 
+ | |  | |_| |_ ____) |  | |  ____) |
+ |_|  |_|_____|_____/   |_| |_____/ 
+
+Info : 
+**********************************************
+Converting Old Project
+**********************************************
+
+Info : Converting Project InterfaceTransportClient to Misys Portal SDK Project
+Info : adding Nature com.misys.portal.sdk.plugin.clientprojectnature
+Info : Project InterfaceTransportClient successfully converted to Misys Portal SDK Project

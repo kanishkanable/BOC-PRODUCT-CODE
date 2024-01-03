@@ -1,0 +1,264 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>InterfaceDemo</groupId>
+	<artifactId>InterfaceDemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Interface</name>
+
+	<description>Interface</description>
+
+	<properties>
+		<java-version>1.6</java-version>
+		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.aspectj-version>1.6.10</org.aspectj-version>
+		<org.slf4j-version>1.6.6</org.slf4j-version>
+	</properties>
+
+	<dependencies>
+		<!-- -->
+
+		<!-- -->
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- <dependency> <groupId>oracle</groupId> <artifactId>ojdbc6</artifactId> 
+			<version>11.2.0.3</version> </dependency> -->
+		<!-- MQ jar -->
+		<!-- <dependency> <groupId>javax.jms</groupId> <artifactId>javax.jms</artifactId> 
+			<version>3.1.2.2</version> </dependency> -->
+
+		<!-- quartz jar -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+		<!-- Log4J Dependency -->
+		<!-- <dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId> 
+			<version>1.2.17</version> </dependency> -->
+		<!-- cas authetication -->
+
+		<dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		<!-- Swift Message -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.5.4-Final</version>
+			<type>pom</type>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.prowidesoftware/pw-swift-core -->
+		<!-- swift-2018 -->
+		<dependency>
+			<groupId>com.prowidesoftware</groupId>
+			<artifactId>pw-swift-core</artifactId>
+			<version>SRU2018-7.10.3</version>
+		</dependency>
+		<!-- <dependency> <groupId>com.misys.tiplus2.customisation_editor</groupId> 
+			<artifactId>customisation_editor</artifactId> <version>1.2.4</version> </dependency> -->
+		<!-- <dependency> <groupId>javax.servlet-api</groupId> <artifactId>javax.servlet-api</artifactId> 
+			<version>3.0.1</version> </dependency> <dependency> <groupId>com.ibm.ws.ejb.thinclient</groupId> 
+			<artifactId>com.ibm.ws.ejb.thinclient</artifactId> <version>7.0.0</version> 
+			</dependency> -->
+
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.misys.tiplus2.messaging</groupId> <artifactId>messaging</artifactId> 
+			<version>1.0</version> </dependency> -->
+
+		<!-- <dependency> <groupId>com.misys.tiplus2.enigma</groupId> <artifactId>com.misys.tiplus2.enigma</artifactId> 
+			<version>1.0</version> </dependency> -->
+		<!-- <dependency> <groupId>ThemeTransportClient</groupId> <artifactId>ThemeTransportClient</artifactId> 
+			<version>1.0</version> </dependency> -->
+
+
+		<!-- <dependency> <groupId>com.prowidesoftware</groupId> <artifactId>pw-swift-core</artifactId> 
+			<version>SRU2017-7.9.3</version> </dependency> -->
+		<dependency>
+			<groupId>rhino</groupId>
+			<artifactId>js</artifactId>
+			<version>1.7R2</version>
+		</dependency>
+		<!-- Scheduler Job -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency> <groupId>foundations-lang</groupId> <artifactId>foundations-lang</artifactId> 
+			<version>1.0.11</version> </dependency> -->
+		<!-- <dependency> <groupId>com.misys.tiplus2.messaging</groupId> <artifactId>com.misys.tiplus2.messaging</artifactId> 
+			<version>1.0</version> </dependency> -->
+
+		<!-- <dependency> <groupId> com.bs.theme.transport.client.ThemeTransportClient 
+			</groupId> <artifactId> com.bs.theme.transport.client.ThemeTransportClient 
+			</artifactId> <version>1.0</version> </dependency> <dependency> <groupId>com.misys.tiplus2.document.upload</groupId> 
+			<artifactId>com.misys.tiplus2.document.upload</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.documentdriver</groupId> 
+			<artifactId>com.misys.tiplus2.documentdriver</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.documents</groupId> 
+			<artifactId>com.misys.tiplus2.documents</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.apps.ti.customisation</groupId> 
+			<artifactId> com.misys.tiplus2.apps.ti.customisation </artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.apps.ti</groupId> <artifactId>com.misys.tiplus2.apps.ti</artifactId> 
+			<version>1.0</version> </dependency> <dependency> <groupId>com.misys.tiplus2.contentmanager</groupId> 
+			<artifactId>com.misys.tiplus2.contentmanager</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.customisation</groupId> 
+			<artifactId>com.misys.tiplus2.customisation</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.dlserver.adaptor</groupId> 
+			<artifactId>com.misys.tiplus2.dlserver.adaptor</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.dlserver</groupId> 
+			<artifactId>com.misys.tiplus2.dlserver</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.enigma</groupId> <artifactId>com.misys.tiplus2.enigma</artifactId> 
+			<version>1.0</version> </dependency> <dependency> <groupId>com.misys.tiplus2.serviceaccess-client</groupId> 
+			<artifactId>com.misys.tiplus2.serviceaccess-client</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId> com.misys.tiplus2.gen.ti-xsd.customisation 
+			</groupId> <artifactId> com.misys.tiplus2.gen.ti-xsd.customisation </artifactId> 
+			<version>1.0</version> </dependency> <dependency> <groupId>com.misys.tiplus2.meridian.swiftdriver</groupId> 
+			<artifactId> com.misys.tiplus2.meridian.swiftdriver </artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.persistence</groupId> 
+			<artifactId>com.misys.tiplus2.persistence</artifactId> <version>1.0</version> 
+			</dependency> <dependency> <groupId>com.misys.tiplus2.print</groupId> <artifactId>com.misys.tiplus2.print</artifactId> 
+			<version>1.0</version> </dependency> <dependency> <groupId> com.misys.tiplus2.swiftdriver.backingbeans 
+			</groupId> <artifactId> com.misys.tiplus2.swiftdriver.backingbeans </artifactId> 
+			<version>1.0</version> </dependency> -->
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>org.test.int1.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

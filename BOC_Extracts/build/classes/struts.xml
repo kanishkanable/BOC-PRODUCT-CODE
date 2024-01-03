@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.ui.theme" value="simple" />
+
+	<package name="default" extends="struts-default,json-default"
+		namespace="/">
+		<action name="dashboard">
+			<result>/view/dashboard.jsp</result>
+		</action>
+		<!-- <action name="ejbClient" class="com.encore.extracts.action.CustAction" 
+			method="ejbClient"> <result name="success">/view/EJBClient/ejbClient.jsp 
+			</result> </action> -->
+		<action name="collateralDetails"
+			class="com.encore.extracts.action.CustAction"
+			method="collateralDetails">
+			<result name="success">/view/collateralDetails/collateralDetails.jsp
+			</result>
+		</action>
+		<action name="customerSelection"
+			class="com.encore.extracts.action.CustAction"
+			method="customerSelection">
+			<result name="success">/view/collateralDetails/customerSelection.jsp
+			</result>
+		</action>
+
+		<action name="collateralSelection"
+			class="com.encore.extracts.action.CollateralAction"
+			method="collateralSelection">
+			<result name="success">/view/collateralDetails/collateralCode.jsp
+			</result>
+		</action>
+
+		<action name="fetchCodeDetails"
+			class="com.encore.extracts.action.CollateralAction"
+			method="fetchCodeDetails">
+			<result name="success">/view/collateralDetails/collateralCode.jsp
+			</result>
+		</action>
+		<action name="fetchGuaranteeCodeDetails"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="fetchGuaranteeCodeDetails">
+			<result name="success">/view/guaranteeDetails/guaranteeCode.jsp
+			</result>
+		</action>
+
+
+		<!-- <action name="customerSelection"> <result>/view/collateralDetails/customerSelection.jsp 
+			</result> </action> -->
+		<action name="fetchCustomerDetails"
+			class="com.encore.extracts.action.CustAction"
+			method="fetchCustomerDetails">
+			<result name="success">/view/collateralDetails/customerSelection.jsp
+			</result>
+		</action>
+		<action name="countrySelection"
+			class="com.encore.extracts.action.CustAction"
+			method="fetchCountryList">
+			<result name="success">/view/collateralDetails/counrtySelection.jsp
+			</result>
+		</action>
+		<action name="fectchCustomerLimits"
+			class="com.encore.extracts.action.CustAction"
+			method="fectchCustomerLimits">
+			<result name="collateralDetails">/view/collateralDetails/collateralDetails.jsp
+			</result>
+			<result name="guaranteeDetails">/view/guaranteeDetails/guaranteeDetails.jsp
+			</result>
+		</action>
+		<action name="attachCollateral"
+			class="com.encore.extracts.action.CollateralAction"
+			method="attachCollateral">
+			<result name="success">/view/collateralDetails/attachCollateral.jsp
+			</result>
+		</action>
+		<action name="returnCOllateral"
+			class="com.encore.extracts.action.CollateralAction"
+			method="returnCOllateral">
+			<result name="success">/view/collateralDetails/attachCollateral.jsp
+			</result>
+		</action>
+		<action name="submitAttachment"
+			class="com.encore.extracts.action.CollateralAction"
+			method="submitAttachment">
+			<result name="success">/view/collateralDetails/collateralDetails.jsp
+			</result>
+			<result name="failed">/view/collateralDetails/attachCollateral.jsp</result>
+		</action>
+		<action name="approveAttachment"
+			class="com.encore.extracts.action.CollateralAction"
+			method="approveAttachment">
+			<result name="success">/view/collateralDetails/collateralDetails.jsp
+			</result>
+			<!-- <result name="input">/view/collateralDetails/collateralDetails.jsp 
+				</result> -->
+		</action>
+		<action name="rejectAttachment"
+			class="com.encore.extracts.action.CollateralAction"
+			method="rejectAttachment">
+			<result name="success">/view/collateralDetails/collateralDetails.jsp
+			</result>
+			<!-- <result name="input">/view/collateralDetails/collateralDetails.jsp 
+				</result> -->
+		</action>
+		<action name="validateCollateralType"
+			class="com.encore.extracts.action.CollateralAction"
+			method="validateCollateralType">
+			<result name="success">/view/collateralDetails/attachCollateral.jsp
+			</result>
+		</action>
+		<action name="guaranteeDetails"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="guaranteeDetails">
+			<result name="success">/view/guaranteeDetails/guaranteeDetails.jsp
+			</result>
+		</action>
+		<action name="attachGuarantee"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="attachGuarantee">
+			<result name="success">/view/guaranteeDetails/attachGuarantee.jsp
+			</result>
+		</action>
+		<action name="returnGuarantee"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="returnGuarantee">
+			<result name="success">/view/guaranteeDetails/attachGuarantee.jsp
+			</result>
+		</action>
+		<action name="guaranteeSelection"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="guaranteeSelection">
+			<result name="success">/view/guaranteeDetails/guaranteeCode.jsp
+			</result>
+		</action>
+		<action name="submitGuaranteeAttachment"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="submitGuaranteeAttachment">
+			<result name="success">/view/guaranteeDetails/guaranteeDetails.jsp
+			</result>
+			<result name="failed">/view/guaranteeDetails/attachGuarantee.jsp
+			</result>
+		</action>
+		<action name="approveGuaranteeAttachment"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="approveGuaranteeAttachment">
+			<result name="success">/view/guaranteeDetails/guaranteeDetails.jsp
+			</result>
+			<!-- <result name="failed">/view/guaranteeDetails/attachGuarantee.jsp 
+				</result> -->
+		</action>
+		<action name="rejectGuaranteeAttachment"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="rejectGuaranteeAttachment">
+			<result name="success">/view/guaranteeDetails/guaranteeDetails.jsp
+			</result>
+			<!-- <result name="failed">/view/guaranteeDetails/attachGuarantee.jsp 
+				</result> -->
+		</action>
+		<action name="validateGuaranteeNature"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="validateGuaranteeNature">
+			<result name="success">/view/guaranteeDetails/attachGuarantee.jsp
+			</result>
+		</action>
+		<action name="validateGuaranteeType"
+			class="com.encore.extracts.action.GuaranteeAction"
+			method="validateGuaranteeType">
+			<result name="success">/view/collateralDetails/attachGuarantee.jsp
+			</result>
+		</action>
+
+		<!-- <action name="closeWindow" class="com.encore.dowjones.action.ExcelFileUpload" 
+			method="closeURL"> </action> -->
+
+
+		<!-- SL_CUSTOMS -->
+		<action name="sl_customs"
+			class="com.boc.ett.extracts.sl_customs.SLCustomAction"
+			method="SLCustoms">
+			<result name="success">/view/SLCustoms/SLCustoms.jsp</result>
+		</action>
+
+		<action name="branchSelection"
+			class="com.boc.ett.extracts.sl_customs.SLCustomAction"
+			method="branchSelection">
+			<result name="success">/view/SLCustoms/BranchSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchBranchDetails"
+			class="com.boc.ett.extracts.sl_customs.SLCustomAction"
+			method="fetchInputBranchDetails">
+			<result name="success">/view/SLCustoms/BranchSelection.jsp
+			</result>
+		</action>
+
+
+
+		<action name="fetchRecords"
+			class="com.boc.ett.extracts.sl_customs.SLCustomAction"
+			method="fetchRecords">
+			<result name="download" type="stream">
+				<param name="contentType">text/xml</param>
+				<param name="inputName">xmlStream</param>
+				<param name="contentDisposition">contentDisposition</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+
+		<action name="DailyFXDue"
+			class="com.boc.ett.extracts.DailyFXDue.DailyFXDueAction"
+			method="dailyFXDue">
+			<result name="success">/view/DailyFXDue/DailyFXDue.jsp
+			</result>
+		</action>
+
+		<action name="fetchExtracts"
+			class="com.boc.ett.extracts.DailyFXDue.DailyFXDueAction"
+			method="fetchExtracts">
+			<result name="download" type="stream">
+				<param name="contentType">text</param>
+				<param name="inputName">stream</param>
+				<param name="contentDisposition">contentDisposition</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+
+		<!-- BSR Extract starts -->
+
+		<action name="bsrHome"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction" method="bsrHome">
+			<result name="success">/view/BSRDetails/BSRHome.jsp
+			</result>
+		</action>
+
+		<action name="customerSearch"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="customerSearch">
+			<result name="success">/view/BSRDetails/CustomerSearch.jsp
+			</result>
+		</action>
+
+		<action name="fetchCustomerLimitDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchCustomerLimitDetails">
+			<result name="success">/view/BSRDetails/BSRHome.jsp
+			</result>
+		</action>
+
+		<action name="customerDetailsSearch"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="customerDetailsSearch">
+			<result name="success">/view/BSRDetails/CustomerSearch.jsp
+			</result>
+		</action>
+
+		<action name="attachBSR"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction" method="attachBSR">
+			<result name="success">/view/BSRDetails/AttachBSR.jsp
+			</result>
+		</action>
+
+		<action name="submitBSRDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="submitBSRDetails">
+			<result name="success">/view/BSRDetails/BSRHome.jsp
+			</result>
+		</action>
+
+		<action name="deleteBSRDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="deleteBSRDetails">
+			<result name="success">/view/BSRDetails/BSRHome.jsp
+			</result>
+		</action>
+
+		<action name="districtCodeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="districtCodeSelection">
+			<result name="success">/view/BSRDetails/DistrictSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchDistrictDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchDistrictDetails">
+			<result name="success">/view/BSRDetails/DistrictSelection.jsp
+			</result>
+		</action>
+
+		<action name="populationGroupCodeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="populationGroupCodeSelection">
+			<result name="success">/view/BSRDetails/PopulationGroupSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchPopulationGroupDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchPopulationGroupDetails">
+			<result name="success">/view/BSRDetails/PopulationGroupSelection.jsp
+			</result>
+		</action>
+
+		<action name="organisationTypeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="organisationTypeSelection">
+			<result name="success">/view/BSRDetails/OrganisationTypeSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchOrganisationTypeDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchOrganisationTypeDetails">
+			<result name="success">/view/BSRDetails/OrganisationTypeSelection.jsp
+			</result>
+		</action>
+
+		<action name="openAttachBSRPage"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="openAttachBSRPage">
+			<result name="success">/view/BSRDetails/AttachBSR.jsp
+			</result>
+		</action>
+
+		<action name="occupationCodeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="occupationCodeSelection">
+			<result name="success">/view/BSRDetails/OccupationSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchOccupationDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchOccupationDetails">
+			<result name="success">/view/BSRDetails/OccupationSelection.jsp
+			</result>
+		</action>
+
+		<action name="categoryBorrowerCodeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="categoryBorrowerCodeSelection">
+			<result name="success">/view/BSRDetails/BorrowerCategorySelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchCategoryBorrowerCodeDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchCategoryBorrowerCodeDetails">
+			<result name="success">/view/BSRDetails/BorrowerCategorySelection.jsp
+			</result>
+		</action>
+
+		<action name="assetClassBorrAccountSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="assetClassBorrAccountSelection">
+			<result name="success">/view/BSRDetails/AssetClassBorrowalAccountSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchAssetClassBorrAccountDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchAssetClassBorrAccountDetails">
+			<result name="success">/view/BSRDetails/AssetClassBorrowalAccountSelection.jsp
+			</result>
+		</action>
+
+		<action name="secUnsecLoanCodeSelection"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="secUnsecLoanCodeSelection">
+			<result name="success">/view/BSRDetails/SecUnSecLoanCodeSelection.jsp
+			</result>
+		</action>
+
+		<action name="fetchSecUnsecLoanCodeDetails"
+			class="com.encore.boc.extracts.bsr.BSRHomeAction"
+			method="fetchSecUnsecLoanCodeDetails">
+			<result name="success">/view/BSRDetails/SecUnSecLoanCodeSelection.jsp
+			</result>
+		</action>
+		<action name="postingstatus"
+			class="com.encore.extracts.action.PostingAction"
+			method="fetchPostingList">
+			<result name="success">/view/postingstatus/postingstatus.jsp
+			</result>
+		</action>
+		<action name="statuschange"
+			class="com.encore.extracts.action.PostingAction"
+			method="statusChange">
+			<result name="success">/view/postingstatus/postingstatus.jsp
+			</result>
+		</action>
+
+		<!-- BSR Extract ends -->
+
+		<action name="ejbClient"
+			class="com.encore.extracts.action.CustAction" method="ejbClient">
+			<result name="success">/view/EJBClient/ejbClient.jsp
+			</result>
+		</action>
+
+		<!-- <action name="submitRequest"
+			class="com.encore.extracts.action.PostingAction"
+			method="submitRequest">
+			<result name="success">/view/EJBClient/ejbClient.jsp
+			</result>
+		</action> -->
+	</package>
+
+
+
+</struts>

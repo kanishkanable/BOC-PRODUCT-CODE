@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/commons-logging-1.2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/foundations-lang-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/jackson-annotations-2.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/jackson-core-2.5.4.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/javax.jms-3.1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/json-simple.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/pw-swift-core-SRU2019-8.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/quartz-2.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/axis.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.fasterxml.jackson.databind.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.ibm.ws.ejb.thinclient_7.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.gen.ti.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.messaging.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.print.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.serviceaccess.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.serviceaccess-client.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/jt400-10.2.jar"/>
+	<classpathentry kind="lib" path="db2jcc4-10.1.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.apps.ti.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.apps.ti.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.gen.ti-xsd.customisation.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.apps.ti-web.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.chart.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.dlserver.adaptor.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.dlserver.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.document.upload.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.documentdriver.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.documents.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.enigma.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.gen.ti-xsd.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.hibernate.custom.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.openapi.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.persistence.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.spi.client.traceable-document.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/httpcore-4.4.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

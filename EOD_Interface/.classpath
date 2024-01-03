@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/apache-commons-lang.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/com.misys.tiplus2.enigma.jar"/>
+	<classpathentry kind="lib" path="D:/seychells_development/Finestra_lib_files/framework-async-processing.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
